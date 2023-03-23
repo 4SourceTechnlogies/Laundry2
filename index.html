@@ -15,6 +15,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e3a7f177f0.js" crossorigin="anonymous"></script>
 
+    <!-- Data Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 
@@ -89,6 +92,35 @@
                     </div>
                 </nav>
             </div>
+
+            <!-- <div class="stricky-header">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a href="" class="navbar-brand">
+                            <img src="images/Launderette-Kart_logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottomnav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="bottomnav">
+                            <ul class="navbar-nav ms-auto mb-0">
+                                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Plan/Pricing</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Franchise</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">
+                                        <button class="btn1">
+                                            Book a Pickup
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div> -->
         </div>
     </div>
 
@@ -96,15 +128,15 @@
         <div class="bannerWrapper">
             <div class="carousel slide" id="#bannerCarousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-img">
+                    <div class="carousel-item active bannerBg1" id="parallax">
+                        <!-- <div class="carousel-img">
                             <img src="images/bannerCarousel1.png" alt="">
-                        </div>
+                        </div> -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <h1>
+                        <h1 data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
                             Laundry & Dry Cleaning <span>Services</span> 
                         </h1>
-                        <button class="btn2">
+                        <button class="btn2" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
                             SCHEDULE PICKUP
                         </button>
                     </div>
@@ -113,7 +145,7 @@
                 </div>
             </div>
             <div class="featuresSection">
-                <div class="container-fluid">
+                <div class="container-fluid" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                     <div class="row">
                         <div class="col-lg-4 col-md-4">
                             <div class="featureIcon">
@@ -152,20 +184,20 @@
     <div class="aboutSection mt-5">
         <div class="aboutWrapper">
             <div class="aboutLeft">
-                <div class="sectionHeading">
+                <div class="sectionHeading" data-aos="fade-right" data-aos-duration="600">
                     <img src="images/aboutBubble.png" alt="">
                     <h3>About Us</h3>
                 </div>
 
                 <div class="aboutBody mt-4">
-                    <h2>We Made Dry Cleaning &
+                    <h2 data-aos="fade-left" data-aos-duration="700" data-aos-delay="600">We Made Dry Cleaning &
                     Laundry Simple</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum hic veritatis aperiam quas necessitatibus, quod cumque asperiores qui iste a nobis distinctio non quo nihil blanditiis doloribus. Enim minus, culpa vero mollitia ipsam dolore hic distinctio debitis nobis maiores voluptatum voluptate dolor. Libero possimus natus consequuntur omnis distinctio neque fugiat!</p>
+                    <p data-aos="fade-left" data-aos-duration="800" data-aos-delay="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum hic veritatis aperiam quas necessitatibus, quod cumque asperiores qui iste a nobis distinctio non quo nihil blanditiis doloribus. Enim minus, culpa vero mollitia ipsam dolore hic distinctio debitis nobis maiores voluptatum voluptate dolor. Libero possimus natus consequuntur omnis distinctio neque fugiat!</p>
                         <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum exercitationem optio nam modi reprehenderit culpa repellat, excepturi odio fugit nulla architecto iure voluptatem molestias nobis inventore vero? Doloribus, voluptate.</p>
+                    <p data-aos="fade-left" data-aos-duration="600" data-aos-delay="1200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum exercitationem optio nam modi reprehenderit culpa repellat, excepturi odio fugit nulla architecto iure voluptatem molestias nobis inventore vero? Doloribus, voluptate.</p>
 
-                    <button class="btn3 mt-5">
+                    <button class="btn3 mt-5" data-aos="fade-up" data-aos-delay="800" data-aos-delay="2400">
                         Read More
                     </button>
                 </div>
@@ -181,12 +213,12 @@
             <div class="sectionHeading">
                 <img src="images/aboutBubble.png" alt="">
                 <h4>What we Offer</h4>
-                <h3>Our Services</h3>
+                <h3 data-aos="fade-up" data-aos-duration="600">Our Services</h3>
             </div>
             <div class="servicesMain">
                 <div class="serviceRow row">
                     <div class="col-lg-3 col-md-3 col-sm-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800" >
                             <div class="card-img-top">
                                 <img src="images/dryCleaning.png" alt="">
                             </div>
@@ -202,7 +234,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="1400" data-aos-duration="800" >
                             <div class="card-img-top">
                                 <img src="images/steam-iron.png" alt="">
                             </div>
@@ -219,7 +251,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="800">
                             <div class="card-img-top">
                                 <img src="images/washingMaching.png" alt="">
                             </div>
@@ -236,7 +268,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="2200" data-aos-duration="800">
                             <div class="card-img-top">
                                 <img src="images/clothes.png" alt="">
                             </div>
@@ -344,14 +376,14 @@
     <div class="ylkSection">
         <div class="ylkWrapper">
             <div class="sectionHeading">
-                <h3 class="mb-4">Why <span>Laundry Kart</span>?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dignissimos ducimus rerum ad sequi eligendi!</p>
+                <h3 class="mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">Why <span>Laundry Kart</span>?</h3>
+                <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dignissimos ducimus rerum ad sequi eligendi!</p>
             </div>
             <div class="ylkMain">
                 <div class="row1Wrapper">
                     <div class="container">
                         <div class="row row1">
-                            <div class="circle c1">
+                            <div class="circle c1" data-aos="fade-right" data-aos-delay="700">
                                 <div class="circleText">
                                     <h4>Guaranteed Satisfaction</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem consequatur
@@ -367,7 +399,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="circle c2">
+                            <div class="circle c2" data-aos="fade-right" data-aos-delay="900">
                                 <div class="circleText">
                                     <h4>Conveniant Services</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem consequatur
@@ -383,7 +415,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="circle c3">
+                            <div class="circle c3" data-aos="fade-right" data-aos-delay="1100">
                                 <div class="circleText">
                                     <h4>Refer & Earn</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem consequatur
@@ -405,7 +437,7 @@
                 <div class="rowWrapper row2Wrapper">
                     <div class="container">
                         <div class="row row2">
-                            <div class="circle c4">
+                            <div class="circle c4" data-aos="fade-left" data-aos-delay="1500">
                                 <div class="circleText">
                                     <h4>Economical Pricing</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem consequatur
@@ -421,7 +453,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="circle c5">
+                            <div class="circle c5" data-aos="fade-left" data-aos-delay="1300">
                                 <div class="circleText">
                                     <h4>Eco friendly</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem consequatur
@@ -438,7 +470,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="circle c6">
+                            <div class="circle c6" data-aos="fade-left" data-aos-delay="1100">
                                 <div class="circleText">
                                     <h4>Pickup & delivery</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem consequatur
@@ -757,8 +789,8 @@
     <div class="footerSection">
         <div class="footerColWrapper">
             <div class="footerIntro">
-                <img src="images/Launderette-Kart_logo.png" alt="" class="footerLogo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, inventore qui libero enim minima
+                <img src="images/Launderette-Kart_logo.png" alt="" class="footerLogo" data-aos="fade-right" data-aos-delay="600" data-aos-duration="600">
+                <p data-aos="fade-right" data-aos-delay="900" data-aos-duration="600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, inventore qui libero enim minima
                     assumenda.</p>
             </div>
             <div class="quickLinks">
@@ -807,8 +839,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
-
-<div class="ro2"></div>
