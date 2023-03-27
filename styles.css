@@ -31,9 +31,15 @@ body{
         margin: 0;
     }
 /* Typo */
+
 /* Nav */
+    .topSection{
+        background-image:url(images/Laundry_03.jpg);
+        background-size: cover;
+    }
     .topNav{
-        background-color: var(--color-primary);
+        background-image:url(images/Laundry_03.jpg);
+        background-size: cover;
         border-radius: 0 0 25px 25px;
         padding: 0.2rem 1rem;
         font-size: 0.85rem;
@@ -648,26 +654,26 @@ body{
 	 font-weight: 800;
 	 padding: 10px 16px;
 	 text-shadow: 1px 1px 4px rgba(0, 54, 90, .5);
-}
+    }
     .card-carousel .button-spin:hover {
 	 box-shadow: 0px 4px 4px 4px rgba(0, 54, 90, .15);
-}
+    }
     .card-carousel .button-spin:active {
 	 box-shadow: none;
-}
+    }
     .card-carousel .button-spin.counterclockwise {
 	 left: 0;
-}
+    }
     .card-carousel .button-spin.clockwise {
 	 right: 0;
-}
+    }
     .card-carousel .inner-carousel {
 	 position: relative;
 	 width: 33%;
 	 margin: 0 auto;
 	 top: 80px;
 	 transform-style: preserve-3d;
-}
+    }
     .card-carousel .inner-carousel > div {
 	 position: absolute;
 	 margin: 0 auto;
@@ -676,7 +682,7 @@ body{
 	 color: #000;
 	 transition: all 0.5s ease-out;
 	 z-index: 1;
-}   
+    }   
     .card-carousel .inner-carousel > div.magnify{
         transform: translatey(-10%)scale(1.15);
         transform-origin: bottom center;
@@ -690,7 +696,7 @@ body{
 	 height: 100%;
 	 opacity: 0.6;
 	 z-index: 1;
-}
+    }
 
     .card-carousel .inner-carousel > div .name{
         color: var(--color-primary);
@@ -698,25 +704,25 @@ body{
     .card-carousel .inner-carousel > div.counterclockwise:after, .card-carousel .inner-carousel > div.clockwise:after {
 	 opacity: 0.4;
 	 cursor: pointer;
-}
- .card-carousel .inner-carousel > div.front:after {
+    }
+    .card-carousel .inner-carousel > div.front:after {
 	 content: none;
-}
+    }
     .card-carousel .inner-carousel > div.front {
 	 background-color: var(--color-primary);
 	 
 	 color: var(--color-secondary);
-}
+    }
     .card-carousel .inner-carousel > div.front a {
 	 box-shadow: 0px 5px 5px 5px rgba(0, 54, 90, .15);
-}
+    }
     .card-carousel .inner-carousel > div.front a:hover, .card-carousel .inner-carousel > div.front a:focus {
 	 border: 2px solid #48cfad;
 	 padding: 5px 0;
-}
+    }
     .card-carousel .inner-carousel > div.front a:active {
 	 box-shadow: none;
-}
+    }
     .card-carousel .inner-carousel > div a {
 	 position: absolute;
 	 text-align: center;
@@ -732,7 +738,7 @@ body{
 	 text-decoration: none;
 	 background-color: #fff;
 	 box-shadow: 0px 5px 8px 3px rgba(0, 54, 90, .10);
-}
+    }
  
 /* Testimonial Section */
 
@@ -771,9 +777,17 @@ body{
         gap: 0.5rem;
     }
     .footerSection .socialIcons li a {
+        background-color: var(--color-primary);
         color:var(--color-primary);
         opacity: 1;
-        font-size: 2rem;
+        font-size: 1.75rem;  
+        border-radius: 5px;
+    }
+    .socialIcons i{
+        color: #fff;
+        padding: 0.25rem;
+        width: 2.25rem;
+        text-align: center;
     }
     .footerCopyRight {
         display: flex;
@@ -791,6 +805,9 @@ body{
     }
     .footerSection li>a:hover{
         color: var(--color-secondary);
+    }
+    .socialIcons li>a:hover{
+        background-color: var(--color-secondary);
     }
     @media (max-width:990px) {
             .footerIntro {
@@ -908,4 +925,100 @@ body{
         .footerColWrapper>div{
             padding-block: 1rem;
         }
+    }
+/* Respnosiveness */
+
+/* AboutPage */
+    .heroSection{
+        background-image: url(images/aboutBg.png);
+        background-size: cover;
+        text-align: center;
+        color: white;
+        padding:  4rem;
+    }
+    .main{
+       background-image: url(images/aboutMainbg.png);
+        background-size: cover; 
+    }
+    .aboutMainWrapper>*:not(.aboutImg){
+        text-align: center;
+        padding-inline: 4rem;
+    }
+    .aboutMainWrapper>div:not(.counterSection,){
+        padding: 2rem 4rem;
+    }
+    .aboutMain .sectionHeading{
+        color: var(--color-primary);
+    }
+    .aboutText h2{
+        font-size: 3rem;
+        color: var(--color-primary);
+    }
+    .aboutImg{
+        position: relative;
+        width: 75%;
+        margin-inline: auto;
+        display: flex;
+    }
+    .vision{
+        background-color: var(--color-primary);
+        border-radius: 0 15px 15px 0;
+        color: #fff;
+        flex: 1 0 60%;
+        line-height: 2;
+        padding: 2rem;
+        position: relative;
+    }
+    .vision h3, .vision p{
+        z-index: 2;
+        position: relative;
+    }
+    .vision h3{
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    .vision::after{
+        content: '';
+        height: 95%;
+        left: 50%;
+        margin: auto;
+        outline: 1px solid white;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 92.5%;
+        z-index: 1;
+    }
+    .counterSection{
+        background-image: url(images/counterBg.png);
+        background-size: cover;
+        color: var(--color-primary);
+        padding-block: 4rem;
+        height: 30rem;
+    }
+    .counterSection .container{
+        border: 1px solid var(--color-primary);
+        padding: 2rem 4rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+    .counterSection h3, .counterSection span{
+        font-weight: 200;
+        font-size: 3rem;
+        display: inline-block;
+    }
+    .counterSection .counter{
+        min-height: 3.5rem;
+    }
+    .counterSection .col-lg-4{
+        display: flex;
+        flex-direction: column;
+    }
+    .counterSection h4{
+        font-weight: 300;
+        width: 72%;
+        margin-inline: auto;
+    }
+    .counterSection .col-lg-4:nth-of-type(2){
+        border-inline: 1px solid var(--color-primary);
     }
