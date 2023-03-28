@@ -33,10 +33,6 @@ p {
 /* Typo */
 
 /* Nav */
-.topSection {
-  background-image: url(images/Laundry_03.jpg);
-  background-size: cover;
-}
 .topNav {
   background-image: url(images/Laundry_03.jpg);
   background-size: cover;
@@ -954,6 +950,12 @@ h3 span {
     display: block;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .workflowSection {
+    height: 60rem;
+  }
+}
 /* Respnosiveness */
 
 /* AboutPage */
@@ -1106,7 +1108,7 @@ h3 span {
 
 /* Services Page */
 .servicesMain {
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 8rem;
 }
 .servicesMain {
   text-align: center;
