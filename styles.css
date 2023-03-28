@@ -686,6 +686,15 @@ h3 span {
   transition: all 0.5s ease-out;
   z-index: 1;
 }
+
+@media screen and (max-width: 767px) {
+  .testimonialSection{
+    padding: 2rem 0;
+  }
+  .testimonialWrapper .card-footer{
+    bottom: -38%;
+  }
+}
 .card-carousel .inner-carousel > div.magnify {
   transform: translatey(-10%) scale(1.15);
   transform-origin: bottom center;
@@ -855,6 +864,10 @@ h3 span {
 }
 /* Footer section */
 
+#mobileTestiCarousel{
+  display: none;
+}
+
 /* Responsiveness */
 @media screen and (max-width: 767px) {
   .carousel-img {
@@ -929,6 +942,16 @@ h3 span {
   }
   .footerColWrapper > div {
     padding-block: 1rem;
+  }
+  .serviceRow .card-img-top{
+    width: 25%;
+  }
+  .desktopTestiCarousel{
+    display: none;
+  }
+
+  #mobileTestiCarousel {
+    display: block;
   }
 }
 /* Respnosiveness */
