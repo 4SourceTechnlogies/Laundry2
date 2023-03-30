@@ -125,18 +125,33 @@ p {
   background-color: white;
   transition: 0.2s ease;
   z-index: 50;
+  animation: bingo 0.5s ease;
 }
 .navbar-brand.smol {
   flex: 0 0 7.5%;
 }
+
+.topNav.htAnimate{
+  position: fixed;
+  animation: ht 0.5s ease;
+}
 @keyframes bingo {
   0% {
-    transform: translateY(0);
+    top: initial;
   }
 
   100% {
+    top: -0.25rem;
+  }
+}
+
+@keyframes ht {
+  0%{
     top: 0;
-    transform: translateY(-50%);
+  }
+
+  100%{
+    transform: translateY(-100%);
   }
 }
 .stricky-header .navbar {
@@ -1209,3 +1224,42 @@ h3 span {
     }
 }
 /* services */
+
+/* Pricing page */
+  .pricingMain>div{
+    color: var(--color-primary);
+    padding:  4rem 2rem 0;
+  }
+  .pricingMain>div:not(.terms){
+    text-align: center;
+  }
+  .pricingMainTop{
+    background-color: #f9f5f4;
+    padding:  4rem;
+  }
+  .pricingMain h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-block: 2rem;
+  }
+  .pricingMain h2 span{
+    font-weight: 600;
+  }
+  .pricingMain .row>div{
+    margin-inline: auto;
+  }
+  .table{
+    --bs-border-color: #913334;
+    --bs-border-opacity: 0.1;
+    color: var(--color-primary);
+    margin-block: 2rem;
+    margin-inline: auto;
+    width: 85%;
+  }
+  .table td{
+    padding: 0.8rem;
+  }
+  #none > td{
+    opacity: 0;
+  }
+/* Pricing Page */
