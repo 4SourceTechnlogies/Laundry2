@@ -1263,3 +1263,62 @@ h3 span {
     opacity: 0;
   }
 /* Pricing Page */
+
+/* Contact Page */
+  .contactMain{
+    padding: 4rem 2rem;
+    display: flex;
+    
+    justify-content: space-between;
+  }
+  .contactMain>div:nth-child(1){
+    text-align: center;
+  }
+  .contactMain img{
+    width: 80%;
+    margin: auto;
+  }
+  .contactForm{
+    flex: 1 0 50%;
+  }
+  .contactForm  h2{
+    font-weight: 400;
+    color: var(--color-primary);
+  }
+  .contactForm h2 span{
+    font-weight: 600;
+  }
+  .contactForm .form-floating>.form-control{
+    width: 90%;
+  }
+  .contactForm .form-floating:nth-of-type(4)> .form-control{
+    padding-bottom: 6rem;
+  }
+  .contactForm .form-floating:nth-of-type(4)>.form-control:focus {
+    padding-bottom: 5.4rem;
+  }
+  .submitBtn button{
+    padding: 0.5rem 2rem;
+    width: 90%;
+    margin-inline: auto;
+    border: none;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+  }
+  .location{
+    padding: 4rem;
+    text-align: center;
+    color: var(--color-primary);
+  }
+  .location h2{
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .location h2 span{
+    font-weight: 600;
+  }
+  iframe{
+    width: 100%;
+  }
+/* Contact Page */
