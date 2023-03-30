@@ -33,14 +33,18 @@ p {
 /* Typo */
 
 /* Nav */
-.topNav {
+.topSection{
   background-image: url(images/Laundry_03.jpg);
   background-size: cover;
+}
+.topNav {
+  background-color: var(--color-primary);
   border-radius: 0 0 25px 25px;
   padding: 0.2rem 1rem;
   font-size: 0.85rem;
   transition: 0.5s ease;
   background-attachment: fixed;
+  z-index: 5;
 }
 .topNav p {
   font-size: 0.85rem;
@@ -79,7 +83,7 @@ p {
 }
 .navbar-brand {
   flex: 0 0 10%;
-  transition: 0.2s ease;
+  transition: 0.5s ease;
 }
 .navbar-collapse {
   flex: 1 0 80%;
@@ -104,71 +108,16 @@ p {
 .topNav ul li :hover {
   color: var(--color-secondary);
 }
-.stricky-header {
-  position: fixed;
-  z-index: 500;
-  padding: 0;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  width: 100%;
-  visibility: hidden;
-  transform: translateY(-120%);
-  transition: transform 500ms ease, visibility 250ms ease-in;
-  box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);
-}
 .bottomNav.fix {
   position: fixed;
-  transform: scaleY(0.95);
+  transform: scaleY(0.95)translateY(-60%);
   width: 100%;
-  top: -0.25rem;
   background-color: white;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
   z-index: 50;
-  animation: bingo 0.5s ease;
 }
 .navbar-brand.smol {
   flex: 0 0 7.5%;
-}
-
-.topNav.htAnimate{
-  position: fixed;
-  animation: ht 0.5s ease;
-}
-@keyframes bingo {
-  0% {
-    top: initial;
-  }
-
-  100% {
-    top: -0.25rem;
-  }
-}
-
-@keyframes ht {
-  0%{
-    top: 0;
-  }
-
-  100%{
-    transform: translateY(-100%);
-  }
-}
-.stricky-header .navbar {
-  padding: 0;
-}
-.stricky-header ul {
-  align-items: center;
-}
-.stricky-header .nav-link {
-  color: var(--color-primary);
-}
-.stricky-header.stricky-fixed {
-  transform: translateY(0);
-  visibility: visible;
-}
-.topNav .htAnimate {
-  transform: translateY(-100%);
   transition: 0.2s ease;
 }
 .btn1:hover {
@@ -226,10 +175,6 @@ p {
 }
 .bannerSection h1 {
   width: 45%;
-}
-.bannerBg1 {
-  background-image: url(images/Laundry_03.jpg);
-  background-size: cover;
 }
 .carousel-img {
   position: absolute;
@@ -814,17 +759,6 @@ h3 span {
   width: 2.25rem;
   text-align: center;
 }
-.footerCopyRight {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 4rem;
-  background-color: #f8c205;
-  align-items: center;
-}
-.footerCopyRight p {
-  font-weight: 500;
-  margin: 0;
-}
 .callFlex p {
   line-height: 2rem;
 }
@@ -834,15 +768,18 @@ h3 span {
 .socialIcons li > a:hover {
   background-color: var(--color-secondary);
 }
+.copyrightSection{
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+}
 @media (max-width: 990px) {
   .footerIntro {
     grid-column: 1/5;
   }
-
   .contactus {
     grid-column: 3/5;
   }
-
   .numbers {
     padding-left: 0.25rem;
   }
@@ -863,14 +800,6 @@ h3 span {
 
   .numbers {
     padding-left: 2rem;
-  }
-
-  .footerCopyRight {
-    padding: 0.85rem 1rem;
-  }
-
-  .footerCopyRight p {
-    font-size: 0.8rem;
   }
 }
 /* Footer section */
